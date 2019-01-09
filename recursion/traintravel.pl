@@ -1,3 +1,7 @@
+/* Exercise  3.3 Trains
+ * Write a recursive predicate travelFromTo/2 that tells us 
+ * when we can travel by train between two towns.
+ */
 directTrain(saarbruecken,dudweiler). 
 directTrain(forbach,saarbruecken). 
 directTrain(freyming,forbach). 

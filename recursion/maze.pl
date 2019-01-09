@@ -18,7 +18,12 @@ connected(16,12).
 connected(14,17). 
 connected(16,19).
 
+/* Write a predicate path/2 that tells you from
+ * which points in the maze you can get to which
+ * other points when chaining together connections
+ * given in the above knowledge base
+ */
 path(X, Y) :- connected(X, Y).
 path(X, Y) :-
-    path(Y, Z),
-    connected(Z, X).
+    connected(Z, Y),
+    path(X, Z).
